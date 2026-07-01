@@ -45,8 +45,8 @@ dependencies = [
     "numpy>=1.26.0,<3.0.0",
     "grpcio>=1.70.0,<2.0.0",
     "grpcio-health-checking>=1.70.0,<2.0.0",
-    "protobuf>=5.28.0,<7.0.0",
-    "cryptography>=46.0.7,<47.0.0",
+    "protobuf>=5.28.0,<8.0.0",
+    "cryptography>=46.0.7,<50.0.0",
     "pycryptodome>=3.18.0,<4.0.0",
     "iterators>=0.0.2,<0.0.3",
     "typer>=0.13.0,<0.21.0",
@@ -68,7 +68,7 @@ simulation = [
     "ray==2.55.1; python_version >= '3.11' and python_version < '3.13'",
     "ray==2.55.1; python_version >= '3.13' and python_version < '3.15' and sys_platform != 'win32'",
 ]
-rest = ["starlette>=0.50.0,<0.51.0", "uvicorn[standard]>=0.40.0,<0.41.0"]
+rest = ["starlette>=0.50.0,<1.4.0", "uvicorn[standard]>=0.40.0,<0.41.0"]
 agent = ["browser-use[core]>=0.13.1,<0.14.0", "trafilatura>=2.1.0,<3.0.0"]
 
 [project.scripts]
@@ -100,7 +100,7 @@ dev = [
     "setuptools==82.0.0",
     "clang-format==17.0.6",
     "isort==5.13.2",
-    "black[jupyter]==25.11.0",
+    "black[jupyter]==26.3.1",
     "taplo==0.9.3",
     "mypy==1.8.0",
     "pylint==4.0.5",
@@ -108,7 +108,7 @@ dev = [
     "pytest==9.0.3",
     "pytest-cov==4.1.0",
     "pytest-watcher==0.4.3",
-    "jupyterlab==4.5.7",
+    "jupyterlab==4.5.9",
     "rope==1.13.0",
     "semver==3.0.2",
     "sphinx==7.4.7",
